@@ -1,0 +1,45 @@
+const en = {
+  nav: { dashboard: "Dashboard", history: "History", import: "Import", logs: "Logs", settings: "Settings" },
+  sidebar: { syncClient: "Sync Client", sync: "Sync", syncing: "Syncing…", connected: "Connected", offline: "Offline", checking: "Checking…" },
+  updater: { checking: "Checking…", available: "v{v} available", downloading: "Downloading {pct}%", ready: "Ready — restart", current: "Up to date", error: "Update error", check: "Check for updates", banner: "🔄 Update ready — silent install, the client will restart automatically.", install: "Update & Restart" },
+  dashboard: {
+    title: "Dashboard", subtitle: "Sync your M+ runs to Keystone Trust",
+    sync: "Sync", syncing: "Syncing…", benchmarks: "Benchmarks",
+    profiles: "{n} profiles", ago: "{t} ago", justNow: "just now",
+    uploaded: "Uploaded", pending: "Pending", failed: "Failed", avgKey: "Avg key · In time",
+    pendingSection: "Pending uploads", recentSection: "Recent runs", more: "+ {n} more runs",
+    noRuns: "No runs detected.", noRunsHint: "Play an M+ with the addon enabled, then sync.",
+    setupTitle: "Setup required", setupDesc: "Point to your WoW installation to start automatic run sync.", setupBtn: "Configure now",
+  },
+  history: {
+    title: "History", subtitle: "{n} run(s) uploaded total", search: "Search a dungeon…",
+    results: "{n} result(s)", empty: "No runs uploaded yet.", emptyHint: "Runs will appear here once uploaded.", noResults: "No results for «{q}»", loading: "Loading…",
+  },
+  import: {
+    title: "Manual Import", subtitle: "Upload a specific combat log file — useful for old logs or backups.",
+    fileLabel: "Combat log file (.txt)", filePlaceholder: "Path to WoWCombatLog.txt…",
+    browse: "Browse", analyse: "Analyse", analysing: "Analysing…",
+    noRuns: "No M+ runs found in this file.", readError: "Error reading file.",
+    runsFound: "{n} runs found", uploadAll: "Upload all ({n})", uploading: "Uploading…",
+    upload: "Upload", retry: "Retry", inTime: "In Time",
+    emptyHint: "Select a file and click Analyse", logPathHint: "The log is usually at:",
+    players: "{n} players",
+  },
+  settings: {
+    title: "Settings", subtitle: "Sync configuration",
+    wowSection: "WoW Installation", wowSectionDesc: "Path to the World of Warcraft _retail_ folder.",
+    retailFolder: "_retail_ folder", account: "Battle.net Account",
+    selectAccount: "Select an account…", accountPlaceholder: "Detect WoW folder first",
+    autoSync: "Automatic sync", autoSyncDesc: "Detect new runs as soon as a dungeon ends",
+    language: "Language",
+    save: "Save", saving: "Saving…", saved: "Saved!", immediate: "Changes applied immediately",
+    accountSection: "Account", connectedAs: "Connected as", logoutHint: "Log out to switch account.",
+    logout: "Log out", loggingOut: "Logging out…",
+    resetQueue: "Reset sync queue", resetQueueDesc: "Force re-upload of all pending runs.", reset: "Reset",
+  },
+  logs: { title: "Logs", subtitle: "{n} entries in memory (max 500)", filterAll: "All", filterWarn: "Warnings", filterError: "Errors", empty: "No logs", clear: "Clear" },
+  login: { connecting: "Connecting via Battle.net…" },
+  runCard: { inTime: "In Time", overtime: "Overtime", players: "{n} players" },
+};
+export default en;
+export type DesktopMessages = typeof en;

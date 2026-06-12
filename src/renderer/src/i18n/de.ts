@@ -1,0 +1,45 @@
+import type { DesktopMessages } from "./en";
+const de: DesktopMessages = {
+  nav: { dashboard: "Dashboard", history: "Verlauf", import: "Import", logs: "Logs", settings: "Einstellungen" },
+  sidebar: { syncClient: "Sync Client", sync: "Synchronisieren", syncing: "Sync…", connected: "Verbunden", offline: "Offline", checking: "Prüfen…" },
+  updater: { checking: "Prüfen…", available: "v{v} verfügbar", downloading: "Download {pct}%", ready: "Bereit — neu starten", current: "Aktuell", error: "Update-Fehler", check: "Nach Updates suchen", banner: "🔄 Update bereit — stille Installation, der Client startet automatisch neu.", install: "Aktualisieren & neu starten" },
+  dashboard: {
+    title: "Dashboard", subtitle: "Synchronisierung deiner M+-Runs mit Keystone Trust",
+    sync: "Synchronisieren", syncing: "Sync läuft…", benchmarks: "Benchmarks",
+    profiles: "{n} Profile", ago: "vor {t}", justNow: "gerade eben",
+    uploaded: "Hochgeladen", pending: "Ausstehend", failed: "Fehlgeschlagen", avgKey: "Ø Schlüssel · In time",
+    pendingSection: "Ausstehende Uploads", recentSection: "Letzte Runs", more: "+ {n} weitere Runs",
+    noRuns: "Keine Runs erkannt.", noRunsHint: "Spiele ein M+ mit aktiviertem Addon, dann synchronisiere.",
+    setupTitle: "Einrichtung erforderlich", setupDesc: "Gib den Pfad zu deiner WoW-Installation an, um die automatische Synchronisierung zu starten.", setupBtn: "Jetzt konfigurieren",
+  },
+  history: {
+    title: "Verlauf", subtitle: "{n} hochgeladene Run(s) insgesamt", search: "Dungeon suchen…",
+    results: "{n} Ergebnis(se)", empty: "Noch keine Runs hochgeladen.", emptyHint: "Runs erscheinen hier sobald sie hochgeladen wurden.", noResults: "Keine Ergebnisse für «{q}»", loading: "Lädt…",
+  },
+  import: {
+    title: "Manueller Import", subtitle: "Lade eine bestimmte Combat-Log-Datei hoch — nützlich für alte Logs oder Backups.",
+    fileLabel: "Combat-Log-Datei (.txt)", filePlaceholder: "Pfad zu WoWCombatLog.txt…",
+    browse: "Durchsuchen", analyse: "Analysieren", analysing: "Analysiere…",
+    noRuns: "Keine M+-Runs in dieser Datei gefunden.", readError: "Fehler beim Lesen der Datei.",
+    runsFound: "{n} Runs gefunden", uploadAll: "Alle hochladen ({n})", uploading: "Upload läuft…",
+    upload: "Hochladen", retry: "Wiederholen", inTime: "In time",
+    emptyHint: "Wähle eine Datei und klicke auf Analysieren", logPathHint: "Der Log befindet sich normalerweise unter:",
+    players: "{n} Spieler",
+  },
+  settings: {
+    title: "Einstellungen", subtitle: "Sync-Konfiguration",
+    wowSection: "WoW-Installation", wowSectionDesc: "Pfad zum _retail_-Ordner von World of Warcraft.",
+    retailFolder: "_retail_-Ordner", account: "Battle.net-Konto",
+    selectAccount: "Konto auswählen…", accountPlaceholder: "Erkenne zuerst den WoW-Ordner",
+    autoSync: "Automatische Synchronisierung", autoSyncDesc: "Erkennt neue Runs sobald ein Dungeon endet",
+    language: "Sprache",
+    save: "Speichern", saving: "Speichert…", saved: "Gespeichert!", immediate: "Änderungen sofort angewendet",
+    accountSection: "Konto", connectedAs: "Verbunden als", logoutHint: "Abmelden um das Konto zu wechseln.",
+    logout: "Abmelden", loggingOut: "Abmelden…",
+    resetQueue: "Sync-Warteschlange zurücksetzen", resetQueueDesc: "Erzwingt den Re-Upload aller ausstehenden Runs.", reset: "Zurücksetzen",
+  },
+  logs: { title: "Logs", subtitle: "{n} Einträge im Speicher (max. 500)", filterAll: "Alle", filterWarn: "Warnungen", filterError: "Fehler", empty: "Keine Logs", clear: "Löschen" },
+  login: { connecting: "Verbindung über Battle.net…" },
+  runCard: { inTime: "In time", overtime: "Zeitüberschreitung", players: "{n} Spieler" },
+};
+export default de;

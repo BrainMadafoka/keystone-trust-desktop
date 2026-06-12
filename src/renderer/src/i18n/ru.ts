@@ -1,0 +1,45 @@
+import type { DesktopMessages } from "./en";
+const ru: DesktopMessages = {
+  nav: { dashboard: "Главная", history: "История", import: "Импорт", logs: "Логи", settings: "Настройки" },
+  sidebar: { syncClient: "Sync Client", sync: "Синхронизировать", syncing: "Синхр…", connected: "Подключено", offline: "Не в сети", checking: "Проверка…" },
+  updater: { checking: "Проверка…", available: "v{v} доступна", downloading: "Загрузка {pct}%", ready: "Готово — перезапустить", current: "Актуально", error: "Ошибка обновления", check: "Проверить обновления", banner: "🔄 Обновление готово — тихая установка, клиент перезапустится автоматически.", install: "Обновить и перезапустить" },
+  dashboard: {
+    title: "Главная", subtitle: "Синхронизация ваших M+ забегов с Keystone Trust",
+    sync: "Синхронизировать", syncing: "Синхронизация…", benchmarks: "Бенчмарки",
+    profiles: "{n} профилей", ago: "{t} назад", justNow: "только что",
+    uploaded: "Загружено", pending: "Ожидание", failed: "Ошибка", avgKey: "Ср. ключ · In time",
+    pendingSection: "Ожидают загрузки", recentSection: "Последние забеги", more: "+ ещё {n} забегов",
+    noRuns: "Забеги не обнаружены.", noRunsHint: "Сыграйте M+ с активным аддоном, затем синхронизируйте.",
+    setupTitle: "Требуется настройка", setupDesc: "Укажите путь к установке WoW для запуска автоматической синхронизации.", setupBtn: "Настроить сейчас",
+  },
+  history: {
+    title: "История", subtitle: "Всего загружено {n} забег(ов)", search: "Поиск подземелья…",
+    results: "{n} результат(ов)", empty: "Загруженных забегов пока нет.", emptyHint: "Забеги появятся здесь после загрузки.", noResults: "Нет результатов для «{q}»", loading: "Загрузка…",
+  },
+  import: {
+    title: "Ручной импорт", subtitle: "Загрузите конкретный файл боевого лога — для старых логов или резервных копий.",
+    fileLabel: "Файл боевого лога (.txt)", filePlaceholder: "Путь к WoWCombatLog.txt…",
+    browse: "Обзор", analyse: "Анализировать", analysing: "Анализ…",
+    noRuns: "M+ забегов в этом файле не найдено.", readError: "Ошибка чтения файла.",
+    runsFound: "Найдено {n} забегов", uploadAll: "Загрузить все ({n})", uploading: "Загрузка…",
+    upload: "Загрузить", retry: "Повторить", inTime: "In Time",
+    emptyHint: "Выберите файл и нажмите Анализировать", logPathHint: "Лог обычно находится по пути:",
+    players: "{n} игроков",
+  },
+  settings: {
+    title: "Настройки", subtitle: "Конфигурация синхронизации",
+    wowSection: "Установка WoW", wowSectionDesc: "Путь к папке _retail_ World of Warcraft.",
+    retailFolder: "Папка _retail_", account: "Аккаунт Battle.net",
+    selectAccount: "Выберите аккаунт…", accountPlaceholder: "Сначала найдите папку WoW",
+    autoSync: "Автоматическая синхронизация", autoSyncDesc: "Обнаруживает новые забеги по окончании подземелья",
+    language: "Язык",
+    save: "Сохранить", saving: "Сохранение…", saved: "Сохранено!", immediate: "Изменения применяются немедленно",
+    accountSection: "Аккаунт", connectedAs: "Подключено как", logoutHint: "Выйдите для смены аккаунта.",
+    logout: "Выйти", loggingOut: "Выход…",
+    resetQueue: "Сбросить очередь синхронизации", resetQueueDesc: "Принудительно повторить загрузку всех ожидающих забегов.", reset: "Сбросить",
+  },
+  logs: { title: "Логи", subtitle: "{n} записей в памяти (макс. 500)", filterAll: "Все", filterWarn: "Предупреждения", filterError: "Ошибки", empty: "Нет логов", clear: "Очистить" },
+  login: { connecting: "Подключение через Battle.net…" },
+  runCard: { inTime: "In Time", overtime: "Превышение времени", players: "{n} игроков" },
+};
+export default ru;

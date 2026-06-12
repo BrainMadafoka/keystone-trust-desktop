@@ -1,0 +1,45 @@
+import type { DesktopMessages } from "./en";
+const ko: DesktopMessages = {
+  nav: { dashboard: "대시보드", history: "기록", import: "가져오기", logs: "로그", settings: "설정" },
+  sidebar: { syncClient: "Sync Client", sync: "동기화", syncing: "동기화 중…", connected: "연결됨", offline: "오프라인", checking: "확인 중…" },
+  updater: { checking: "확인 중…", available: "v{v} 사용 가능", downloading: "다운로드 {pct}%", ready: "준비됨 — 재시작", current: "최신 버전", error: "업데이트 오류", check: "업데이트 확인", banner: "🔄 업데이트 준비됨 — 자동으로 설치 후 재시작됩니다.", install: "업데이트 및 재시작" },
+  dashboard: {
+    title: "대시보드", subtitle: "M+ 런을 Keystone Trust에 동기화",
+    sync: "동기화", syncing: "동기화 중…", benchmarks: "벤치마크",
+    profiles: "{n}개 프로필", ago: "{t} 전", justNow: "방금",
+    uploaded: "업로드됨", pending: "대기 중", failed: "실패", avgKey: "평균 키 · In time",
+    pendingSection: "업로드 대기 중", recentSection: "최근 런", more: "+ {n}개 런 더",
+    noRuns: "감지된 런이 없습니다.", noRunsHint: "애드온을 활성화하고 M+를 플레이한 후 동기화하세요.",
+    setupTitle: "설정 필요", setupDesc: "자동 동기화를 시작하려면 WoW 설치 경로를 지정하세요.", setupBtn: "지금 설정",
+  },
+  history: {
+    title: "기록", subtitle: "총 {n}개 런 업로드됨", search: "던전 검색…",
+    results: "{n}개 결과", empty: "아직 업로드된 런이 없습니다.", emptyHint: "런이 업로드되면 여기에 표시됩니다.", noResults: "«{q}»에 대한 결과 없음", loading: "로딩 중…",
+  },
+  import: {
+    title: "수동 가져오기", subtitle: "특정 전투 로그 파일 업로드 — 오래된 로그나 백업에 유용합니다.",
+    fileLabel: "전투 로그 파일 (.txt)", filePlaceholder: "WoWCombatLog.txt 경로…",
+    browse: "찾아보기", analyse: "분석", analysing: "분석 중…",
+    noRuns: "이 파일에서 M+ 런을 찾을 수 없습니다.", readError: "파일 읽기 오류.",
+    runsFound: "{n}개 런 발견", uploadAll: "모두 업로드 ({n})", uploading: "업로드 중…",
+    upload: "업로드", retry: "다시 시도", inTime: "In Time",
+    emptyHint: "파일을 선택하고 분석을 클릭하세요", logPathHint: "로그는 보통 다음 경로에 있습니다:",
+    players: "{n}명 플레이어",
+  },
+  settings: {
+    title: "설정", subtitle: "동기화 구성",
+    wowSection: "WoW 설치", wowSectionDesc: "World of Warcraft _retail_ 폴더 경로.",
+    retailFolder: "_retail_ 폴더", account: "Battle.net 계정",
+    selectAccount: "계정 선택…", accountPlaceholder: "먼저 WoW 폴더를 감지하세요",
+    autoSync: "자동 동기화", autoSyncDesc: "던전 종료 시 새 런 자동 감지",
+    language: "언어",
+    save: "저장", saving: "저장 중…", saved: "저장됨!", immediate: "변경 사항 즉시 적용",
+    accountSection: "계정", connectedAs: "다음으로 연결됨", logoutHint: "계정을 변경하려면 로그아웃하세요.",
+    logout: "로그아웃", loggingOut: "로그아웃 중…",
+    resetQueue: "동기화 대기열 초기화", resetQueueDesc: "대기 중인 모든 런을 강제로 다시 업로드합니다.", reset: "초기화",
+  },
+  logs: { title: "로그", subtitle: "메모리에 {n}개 항목 (최대 500)", filterAll: "전체", filterWarn: "경고", filterError: "오류", empty: "로그 없음", clear: "지우기" },
+  login: { connecting: "Battle.net을 통해 연결 중…" },
+  runCard: { inTime: "In Time", overtime: "시간 초과", players: "{n}명 플레이어" },
+};
+export default ko;

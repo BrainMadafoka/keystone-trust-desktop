@@ -1,0 +1,45 @@
+import type { DesktopMessages } from "./en";
+const zhTW: DesktopMessages = {
+  nav: { dashboard: "儀表板", history: "歷史記錄", import: "匯入", logs: "日誌", settings: "設定" },
+  sidebar: { syncClient: "Sync Client", sync: "同步", syncing: "同步中…", connected: "已連線", offline: "離線", checking: "檢查中…" },
+  updater: { checking: "檢查中…", available: "v{v} 可更新", downloading: "下載 {pct}%", ready: "就緒 — 重新啟動", current: "已是最新", error: "更新錯誤", check: "檢查更新", banner: "🔄 更新就緒 — 靜默安裝，客戶端將自動重新啟動。", install: "更新並重新啟動" },
+  dashboard: {
+    title: "儀表板", subtitle: "將您的 M+ 跑本同步至 Keystone Trust",
+    sync: "同步", syncing: "同步中…", benchmarks: "基準資料",
+    profiles: "{n} 個配置", ago: "{t} 前", justNow: "剛才",
+    uploaded: "已上傳", pending: "待上傳", failed: "失敗", avgKey: "平均鑰石 · In time",
+    pendingSection: "待上傳跑本", recentSection: "最近跑本", more: "還有 {n} 個跑本",
+    noRuns: "未偵測到任何跑本。", noRunsHint: "啟用插件進行 M+ 後，再進行同步。",
+    setupTitle: "需要設定", setupDesc: "請指定 WoW 安裝路徑以開始自動同步。", setupBtn: "立即設定",
+  },
+  history: {
+    title: "歷史記錄", subtitle: "共 {n} 個跑本已上傳", search: "搜尋地城…",
+    results: "{n} 個結果", empty: "尚未上傳任何跑本。", emptyHint: "跑本上傳後將顯示在此處。", noResults: "「{q}」沒有結果", loading: "載入中…",
+  },
+  import: {
+    title: "手動匯入", subtitle: "上傳特定的戰鬥日誌檔案 — 適用於舊日誌或備份。",
+    fileLabel: "戰鬥日誌檔案 (.txt)", filePlaceholder: "WoWCombatLog.txt 的路徑…",
+    browse: "瀏覽", analyse: "分析", analysing: "分析中…",
+    noRuns: "此檔案中未找到 M+ 跑本。", readError: "讀取檔案時發生錯誤。",
+    runsFound: "找到 {n} 個跑本", uploadAll: "全部上傳 ({n})", uploading: "上傳中…",
+    upload: "上傳", retry: "重試", inTime: "In Time",
+    emptyHint: "選擇檔案後點擊分析", logPathHint: "日誌通常位於：",
+    players: "{n} 位玩家",
+  },
+  settings: {
+    title: "設定", subtitle: "同步設定",
+    wowSection: "WoW 安裝", wowSectionDesc: "World of Warcraft _retail_ 資料夾路徑。",
+    retailFolder: "_retail_ 資料夾", account: "Battle.net 帳號",
+    selectAccount: "選擇帳號…", accountPlaceholder: "請先偵測 WoW 資料夾",
+    autoSync: "自動同步", autoSyncDesc: "地城結束時自動偵測新跑本",
+    language: "語言",
+    save: "儲存", saving: "儲存中…", saved: "已儲存！", immediate: "變更立即套用",
+    accountSection: "帳號", connectedAs: "目前登入", logoutHint: "登出以切換帳號。",
+    logout: "登出", loggingOut: "登出中…",
+    resetQueue: "重設同步佇列", resetQueueDesc: "強制重新上傳所有待處理的跑本。", reset: "重設",
+  },
+  logs: { title: "日誌", subtitle: "記憶體中 {n} 筆記錄（最多 500）", filterAll: "全部", filterWarn: "警告", filterError: "錯誤", empty: "無日誌", clear: "清除" },
+  login: { connecting: "透過 Battle.net 連線中…" },
+  runCard: { inTime: "In Time", overtime: "超時", players: "{n} 位玩家" },
+};
+export default zhTW;

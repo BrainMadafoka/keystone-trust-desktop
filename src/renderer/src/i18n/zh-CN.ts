@@ -1,0 +1,45 @@
+import type { DesktopMessages } from "./en";
+const zhCN: DesktopMessages = {
+  nav: { dashboard: "仪表板", history: "历史记录", import: "导入", logs: "日志", settings: "设置" },
+  sidebar: { syncClient: "Sync Client", sync: "同步", syncing: "同步中…", connected: "已连接", offline: "离线", checking: "检查中…" },
+  updater: { checking: "检查中…", available: "v{v} 可更新", downloading: "下载 {pct}%", ready: "就绪 — 重新启动", current: "已是最新", error: "更新错误", check: "检查更新", banner: "🔄 更新就绪 — 静默安装，客户端将自动重新启动。", install: "更新并重新启动" },
+  dashboard: {
+    title: "仪表板", subtitle: "将您的 M+ 本同步至 Keystone Trust",
+    sync: "同步", syncing: "同步中…", benchmarks: "基准数据",
+    profiles: "{n} 个配置", ago: "{t} 前", justNow: "刚才",
+    uploaded: "已上传", pending: "待上传", failed: "失败", avgKey: "平均钥石 · In time",
+    pendingSection: "待上传副本", recentSection: "最近副本", more: "还有 {n} 个副本",
+    noRuns: "未检测到任何副本。", noRunsHint: "启用插件进行 M+ 后，再进行同步。",
+    setupTitle: "需要设置", setupDesc: "请指定 WoW 安装路径以开始自动同步。", setupBtn: "立即设置",
+  },
+  history: {
+    title: "历史记录", subtitle: "共 {n} 个副本已上传", search: "搜索地下城…",
+    results: "{n} 个结果", empty: "尚未上传任何副本。", emptyHint: "副本上传后将显示在此处。", noResults: "「{q}」没有结果", loading: "加载中…",
+  },
+  import: {
+    title: "手动导入", subtitle: "上传特定的战斗日志文件 — 适用于旧日志或备份。",
+    fileLabel: "战斗日志文件 (.txt)", filePlaceholder: "WoWCombatLog.txt 的路径…",
+    browse: "浏览", analyse: "分析", analysing: "分析中…",
+    noRuns: "此文件中未找到 M+ 副本。", readError: "读取文件时发生错误。",
+    runsFound: "找到 {n} 个副本", uploadAll: "全部上传 ({n})", uploading: "上传中…",
+    upload: "上传", retry: "重试", inTime: "In Time",
+    emptyHint: "选择文件后点击分析", logPathHint: "日志通常位于：",
+    players: "{n} 位玩家",
+  },
+  settings: {
+    title: "设置", subtitle: "同步配置",
+    wowSection: "WoW 安装", wowSectionDesc: "World of Warcraft _retail_ 文件夹路径。",
+    retailFolder: "_retail_ 文件夹", account: "Battle.net 账号",
+    selectAccount: "选择账号…", accountPlaceholder: "请先检测 WoW 文件夹",
+    autoSync: "自动同步", autoSyncDesc: "地下城结束时自动检测新副本",
+    language: "语言",
+    save: "保存", saving: "保存中…", saved: "已保存！", immediate: "更改立即生效",
+    accountSection: "账号", connectedAs: "当前登录", logoutHint: "退出以切换账号。",
+    logout: "退出登录", loggingOut: "退出中…",
+    resetQueue: "重置同步队列", resetQueueDesc: "强制重新上传所有待处理的副本。", reset: "重置",
+  },
+  logs: { title: "日志", subtitle: "内存中 {n} 条记录（最多 500）", filterAll: "全部", filterWarn: "警告", filterError: "错误", empty: "无日志", clear: "清除" },
+  login: { connecting: "正在通过 Battle.net 连接…" },
+  runCard: { inTime: "In Time", overtime: "超时", players: "{n} 位玩家" },
+};
+export default zhCN;

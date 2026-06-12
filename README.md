@@ -25,6 +25,14 @@ Built with Electron + electron-vite + TypeScript. Installer: NSIS.
 
 Official builds are published at [keystone-trust-desktop-releases](https://github.com/BrainMadafoka/keystone-trust-desktop-releases) and auto-update from there.
 
+## Code signing
+
+Code signing for official builds is provided by the [SignPath Foundation](https://signpath.org), using the [SignPath.io](https://signpath.io) signing service.
+
+## Privacy
+
+The client reads only the WoW combat log and Keystone Trust SavedVariables files, and uploads run summaries with your personal API key (revocable at any time). See the full [privacy policy](https://www.wowkeystonetrust.com/privacy).
+
 ## License
 
 [MIT](LICENSE)
